@@ -40,7 +40,7 @@ Here are some visuals to give you a glimpse into the landing page design:
 
 ## Live Page
 
-You can view the live version of the landing page here: [Laboratory Work Landing Page](https://stefannistor69.github.io/PW_lab2/).
+You can view the live version of the landing page here: [Laboratory Work Landing Page](https://stefannistor69.github.io/tum-web-lab3/).
 
 ## Local Setup
 
