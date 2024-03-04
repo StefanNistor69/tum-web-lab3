@@ -132,37 +132,31 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 100px;
-    min-height: 155px;
+    max-width: 140px; /* Adjusted for consistency */
     text-align: center;
-    /* Cards will take the full width of the .cards-column container */
+    margin: auto; /* Center cards in their container */
+    margin-bottom: 20px; /* Add space below cards */
   }
-  .card1,.card3{
-    position: relative;
-    top: -40px;
-  }
-  
-  
-  .card img{
-
-    max-width: 100%; /* Ensures the image is responsive and fits the card */
-  height: auto; /* Maintains the aspect ratio of the image */
-  display: block; /* Changes the img from inline to block-level */
-  margin: 0 auto; /* Automatically calculates left and right margins to center the image */
-  }
-  
   
   .card img {
-    width: 60px; /* Adjust size as needed */
-    height: 60px; /* Adjust size as needed */
-    margin-bottom: 20px;
+    max-width: 60px; /* Adjust size as needed */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block;
+    margin: 0 auto 20px auto; /* Center image and add space below */
   }
-  .card1,.card2,.card3,.card4{
-
-    height: 193px !important;
-    width: 140px !important;
-    
-
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center; /* Center cards vertically in a single column */
+    }
+  
+    .card, .card1, .card2, .card3, .card4 {
+      max-width: 80%; /* Allow cards to use more width on smaller screens */
+      margin-bottom: 20px; /* Ensure there's space between stacked cards */
+      position: relative;
+      top: auto; /* Remove the negative top positioning */
+    }
   }
   .newsletter-section {
     padding: 50px 20px; /* Adjust padding as needed */
