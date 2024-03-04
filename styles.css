@@ -165,6 +165,10 @@ body {
     
 
   }
+  .mobile-pricing-section {
+    background-color: white;
+    display: none;
+  }
   @media (max-width: 768px) {
     .cards-container {
       flex-direction: column;
@@ -176,6 +180,49 @@ body {
       margin-bottom: 20px; /* Ensure there's space between stacked cards */
       position: relative;
       top: auto; /* Remove the negative top positioning */
+    }
+    .mobile-pricing-section {
+      display: block;
+      padding: 20px;
+      background-color: white; /* Light background for visibility */
+    }
+  
+    .mobile-pricing-section .plan {
+      margin-bottom: 20px; /* Space between plans */
+      background-color: #ffffff; /* Background for each plan */
+      padding: 15px;
+      border-radius: 8px; /* Soften the corners */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    }
+  
+    .mobile-pricing-section h2, .mobile-pricing-section h3 {
+      text-align: center; /* Center align the titles */
+    }
+  
+    .mobile-pricing-section ul {
+      list-style: none; /* Remove bullet points */
+      padding: 0; /* Remove padding */
+    }
+  
+    .mobile-pricing-section ul li {
+      text-align: center; /* Center list items */
+      margin: 10px 0; /* Space out the features */
+    }
+  
+    .mobile-pricing-section button {
+      display: block; /* Ensure button spans the width */
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px; /* Space above the button */
+      background-color: #007bff; /* Example button color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .mobile-pricing-section button:hover {
+      background-color: #0056b3; /* Darker shade on hover */
     }
   }
   .newsletter-section {
@@ -264,10 +311,12 @@ body {
     }
   
     .cards-column {
+      display: none;
       flex-direction: column;
     }
   
     .card {
+      
       width: auto; /* Allow cards to expand */
       margin: 10px 0; /* Add some spacing between cards */
     }
@@ -498,10 +547,12 @@ body {
 
 #mascot {
   position: fixed;
+
   bottom: 20px;
   right: 20px;
   cursor: pointer;
-  animation: slideUp 0.5s ease-out forwards;
+  animation: slideUp 0.5s ease-out forwards, shake 1s ease-in-out 3s infinite;
+  
 }
 
 #mascot .message {
@@ -538,5 +589,17 @@ body {
   }
   to {
     transform: translateY(0); /* End at its final position */
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
   }
 }
