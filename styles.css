@@ -203,13 +203,19 @@ body {
   
   @media (max-width: 768px) {
     .navbar ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navbar li {
-      margin: 10px 0; /* Add some vertical spacing */
-    }
+    flex-direction: row; /* Keep the direction horizontal */
+    justify-content: center; /* Center the items if needed */
+    flex-wrap: wrap; /* Allows items to wrap in case of insufficient space */
+  }
+
+  .navbar li {
+    margin: 0 5px; /* Adjust horizontal spacing */
+  }
+
+  /* Optional: Adjust navbar padding on smaller screens for better spacing */
+  .navbar {
+    padding: 0 10px;
+  }
     .main-content {
       flex-direction: column; /* Stacks the children vertically on smaller screens */
     }
