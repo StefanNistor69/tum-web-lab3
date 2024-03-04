@@ -132,19 +132,39 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 140px; /* Adjusted for consistency */
+    max-width: 100px;
+    min-height: 155px;
     text-align: center;
-    margin: auto; /* Center cards in their container */
-    margin-bottom: 20px; /* Add space below cards */
+    /* Cards will take the full width of the .cards-column container */
   }
+  .card1,.card3{
+    position: relative;
+    top: -40px;
+  }
+  
+  
+  .card img{
+
+    max-width: 100%; /* Ensures the image is responsive and fits the card */
+  height: auto; /* Maintains the aspect ratio of the image */
+  display: block; /* Changes the img from inline to block-level */
+  margin: 0 auto; /* Automatically calculates left and right margins to center the image */
+  }
+  
   
   .card img {
-    max-width: 60px; /* Adjust size as needed */
-    height: auto; /* Maintains the aspect ratio of the image */
-    display: block;
-    margin: 0 auto 20px auto; /* Center image and add space below */
+    width: 100%;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    margin-bottom: 20px;
   }
-  
+  .card1,.card2,.card3,.card4{
+
+    height: 193px !important;
+    width: 140px !important;
+    
+
+  }
   @media (max-width: 768px) {
     .cards-container {
       flex-direction: column;
@@ -203,19 +223,19 @@ body {
   
   @media (max-width: 768px) {
     .navbar ul {
-    flex-direction: row; /* Keep the direction horizontal */
-    justify-content: center; /* Center the items if needed */
-    flex-wrap: wrap; /* Allows items to wrap in case of insufficient space */
-  }
-
-  .navbar li {
-    margin: 0 5px; /* Adjust horizontal spacing */
-  }
-
-  /* Optional: Adjust navbar padding on smaller screens for better spacing */
-  .navbar {
-    padding: 0 10px;
-  }
+      flex-direction: row; /* Keep the direction horizontal */
+      justify-content: center; /* Center the items if needed */
+      flex-wrap: wrap; /* Allows items to wrap in case of insufficient space */
+    }
+  
+    .navbar li {
+      margin: 0 5px; /* Adjust horizontal spacing */
+    }
+  
+    /* Optional: Adjust navbar padding on smaller screens for better spacing */
+    .navbar {
+      padding: 0 10px;
+    }
     .main-content {
       flex-direction: column; /* Stacks the children vertically on smaller screens */
     }
