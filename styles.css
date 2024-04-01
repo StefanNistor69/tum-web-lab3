@@ -52,22 +52,22 @@ body {
     opacity: 50%;
   }
 
-  
+/*   
   .clients {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Padding on both sides */
-    margin: 0 auto; /* Centers the navbar */
-    max-width: 1200px; /* Same as the main content for alignment */
+    padding: 0 20px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
     width: 100%;
     
   }
   
   .clients img {
-    height: 40px; /* Adjust as needed */
+    height: 40px; 
     
-  }
+  } */
 
   .main-content {
     position: relative;
@@ -225,47 +225,47 @@ body {
       background-color: #0056b3; /* Darker shade on hover */
     }
   }
-  .newsletter-section {
-    padding: 50px 20px; /* Adjust padding as needed */
-    max-width: 1200px; /* This limits the maximum width of the div */
-    width: 100%; /* This ensures it takes up 100% of the parent width until it reaches max-width */
+  /* .newsletter-section {
+    padding: 50px 20px; 
+    max-width: 1200px;
+    width: 100%; 
     position: relative;
     justify-content: space-between;
-    margin: 20px auto; /* This centers the div and maintains a margin from the top and bottom */
+    margin: 20px auto; 
     text-align: center;
-  }
+  } */
   
-  .newsletter-content h2 {
-    color: #000; /* Color for the heading, adjust as needed */
-    margin-bottom: 10px; /* Spacing below the heading */
+  /* .newsletter-content h2 {
+    color: #000; 
+    margin-bottom: 10px; 
   }
   
   .newsletter-content p {
-    color: #666; /* Lighter text color for the paragraph */
-    margin-bottom: 20px; /* Spacing below the paragraph */
+    color: #666;
+    margin-bottom: 20px; 
   }
   
   .newsletter-form {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Spacing between input and button */
+    gap: 10px; 
   }
   
   .newsletter-form input[type="email"] {
     padding: 10px;
-    border-radius: 20px; /* Rounded corners for the input field */
-    border: 1px solid #ddd; /* Light grey border for the input */
-    width: 300px; /* Width of the input field, adjust as necessary */
+    border-radius: 20px; 
+    border: 1px solid #ddd; 
+    width: 300px; 
   }
   
   .newsletter-form button {
     padding: 10px 20px;
-    border-radius: 20px; /* Rounded corners for the button */
-    border: none; /* Remove the default border */
-    background-color: rgb(0, 82, 204); /* Background color for the button */
-    color: white; /* Text color for the button */
-    cursor: pointer; /* Cursor effect when hovering the button */
-  }
+    border-radius: 20px;
+    border: none; 
+    background-color: rgb(0, 82, 204); 
+    color: white; 
+    cursor: pointer; 
+  } */
   
   
   @media (max-width: 768px) {
